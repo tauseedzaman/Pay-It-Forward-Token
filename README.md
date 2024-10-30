@@ -10,6 +10,10 @@ The Pay It Forward (PIF) Token is an ERC20 token designed for the platform [theb
 - **Ownership Management**: Two-step ownership transfer process for added security.
 - **Fee Redistribution**: Accumulated fees can be redistributed to the platform.
 
+## Links
+
+- **BscScan**: [View Contract on BscScan](https://bscscan.com/token/0x26dc7dd2a1c9a1f6da9cb992321f80fc91d73d3e)
+
 ## Contract Details
 
 - **Token Name**: Pay It Forward
