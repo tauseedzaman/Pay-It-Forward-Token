@@ -1,66 +1,55 @@
-## Foundry
+# Pay It Forward (PIF) Token
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+![PIF Token Logo](link-to-your-logo)
 
-Foundry consists of:
+## Overview
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+The Pay It Forward (PIF) Token is an ERC20 token designed for the platform [thebenefactor.net](https://thebenefactor.net). This smart contract allows users to perform transactions with built-in buy/sell fees that are redistributed based on defined allocations for platform rewards and operating expenses. Utilizing OpenZeppelin libraries, it ensures security and reliability.
 
-## Documentation
+## Features
 
-https://book.getfoundry.sh/
+- **ERC20 Standard**: Complies with the ERC20 token standard for interoperability.
+- **Pausable**: Allows the contract owner to pause all transfers in case of emergencies.
+- **Buy/Sell Fees**: Implements a fee structure on transactions involving liquidity pairs, enhancing platform sustainability.
+- **Ownership Management**: Two-step ownership transfer process for added security.
+- **Fee Redistribution**: Accumulated fees can be redistributed to the platform.
+
+## Contract Details
+
+- **Token Name**: Pay It Forward
+- **Symbol**: PIF
+- **Initial Supply**: 500,000,000 PIF (500 million tokens)
+- **Buy/Sell Fee**: 3% (300 basis points, adjustable)
+
+## Installation
+
+To set up this contract, clone the repo and make sure to install [Foundry](https://github.com/foundry-rs/foundry) and the required dependencies.
+
+1. Install Foundry:
+   ```bash
+   curl -L https://foundry.paradigm.xyz | bash
+   foundryup
+   ```
+
+2. Install OpenZeppelin Contracts:
+   ```bash
+   forge install OpenZeppelin/openzeppelin-contracts
+   ```
 
 ## Usage
 
-### Build
+After installing the dependencies, you can compile and deploy the PIF token contract using Foundry commands.
 
-```shell
-$ forge build
-```
+- **Compile**: 
+  ```bash
+  forge build
+  ```
 
-### Test
+- **Deploy**: 
+  ```bash
+  forge create src/PIFToken.sol:PIFToken
+  ```
 
-```shell
-$ forge test
-```
+## License
 
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
