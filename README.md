@@ -1,4 +1,5 @@
 # Pay It Forward (PIF) Token
+![Our-Native-Token-Logo](https://github.com/user-attachments/assets/f14ce944-a036-4cf3-9506-6bf72eb8f0c5)
 
 The Pay It Forward (PIF) Token is an ERC20 token designed for the platform [thebenefactor.net](https://thebenefactor.net). This smart contract allows users to perform transactions with built-in buy/sell fees that are redistributed based on defined allocations for platform rewards and operating expenses. Utilizing OpenZeppelin libraries, it ensures security and reliability.
 
